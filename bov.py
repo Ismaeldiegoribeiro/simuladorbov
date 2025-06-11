@@ -6,13 +6,13 @@ import matplotlib.pyplot as plt
 # Configuração inicial
 st.set_page_config(page_title="Simulador de Engorda de Bovinos", layout="wide")
 # Carregar e exibir a logo
-logo = Image.open("logo_faz.png")  # ou o nome do seu arquivo
+logo = Image.open("Logo_faz.png")  # ou o nome do seu arquivo
 st.image(logo, width=100)  # ajuste a largura conforme desejar
 st.title("🐂 Simulador Completo de Engorda de Bovinos")
 
 # Sidebar com entradas
 with st.sidebar:
-    logo = Image.open("logo_faz.png")
+    logo = Image.open("Logo_faz.png")
     st.image(logo, width=75)
 
     st.header("🔧 Parâmetros da Simulação")
