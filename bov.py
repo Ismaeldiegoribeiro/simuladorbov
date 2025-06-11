@@ -1,20 +1,13 @@
 import streamlit as st
-from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Configuração inicial
 st.set_page_config(page_title="Simulador de Engorda de Bovinos", layout="wide")
-# Carregar e exibir a logo
-logo = Image.open("Logo_faz.png")  # ou o nome do seu arquivo
-st.image(logo, width=100)  # ajuste a largura conforme desejar
 st.title("🐂 Simulador Completo de Engorda de Bovinos")
 
 # Sidebar com entradas
 with st.sidebar:
-    logo = Image.open("Logo_faz.png")
-    st.image(logo, width=75)
-
     st.header("🔧 Parâmetros da Simulação")
 
     raca = st.selectbox("Raça", ["Nelore", "Angus", "Cruzado"])
